@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Gupta - Web Developer</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CoreUI for Leetcode icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/icons@2.1.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold brand-gradient-text">PG</a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-500 transition duration-300">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-500 transition duration-300">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-500 transition duration-300">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#about" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#skills" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Projects</a>
+            <a href="#contact" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section id="hero" class="container mx-auto px-6 py-20 md:py-32 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 reveal">Hi, I'm Pratham Gupta</h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-8 reveal" style="transition-delay: 200ms;">
+                    I'm a passionate <span class="typed-text font-semibold brand-gradient-text"></span>
+                </p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10 reveal" style="transition-delay: 400ms;">
+                    I specialize in creating modern, responsive, and user-friendly web applications. Let's build something amazing together.
+                </p>
+                <a href="#contact" class="inline-block brand-gradient text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 reveal" style="transition-delay: 600ms;">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 reveal">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 reveal">
+                        <img src="https://placehold.co/400x400/3b82f6/ffffff?text=PG" alt="Pratham Gupta Portrait" class="rounded-full shadow-2xl mx-auto w-64 h-64 md:w-full md:h-auto object-cover">
+                    </div>
+                    <div class="md:w-2/3 text-lg text-gray-600 space-y-4 reveal" style="transition-delay: 200ms;">
+                        <p>Hello! I'm Pratham Gupta, a web developer based in Pune. My journey into web development started a year ago with a simple "Hello, World!" and has since grown into a full-fledged passion for building elegant and efficient solutions to complex problems.</p>
+                        <p>I thrive on turning ideas into reality through code. My expertise lies in front-end development, with a strong command of HTML, CSS, JavaScript, and modern frameworks like React. I'm also proficient in back-end technologies, allowing me to build complete, full-stack applications.</p>
+                        <p>I have command in Maths and Problem Solving.</p>
+                        <p>When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or enjoying a good cup of coffee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 reveal">My Skills</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 reveal">
+                        <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4">
+                            <img src="assets/icons/cpp_logo.svg" alt="C++ Language Logo" class="max-w-full max-h-full">
+                        </div>
+                        <h3 class="font-semibold">C++</h3>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 reveal" style="transition-delay: 100ms;">
+                        <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                        <h3 class="font-semibold">HTML5</h3>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 reveal" style="transition-delay: 200ms;">
+                        <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+                        <h3 class="font-semibold">CSS3</h3>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 reveal" style="transition-delay: 300ms;">
+                        <i class="fab fa-js-square text-5xl text-yellow-500 mb-4"></i>
+                        <h3 class="font-semibold">JavaScript</h3>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 reveal" style="transition-delay: 400ms;">
+                        <i class="fab fa-react text-5xl text-cyan-400 mb-4"></i>
+                        <h3 class="font-semibold">React</h3>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 reveal" style="transition-delay: 500ms;">
+                        <i class="fab fa-node-js text-5xl text-green-500 mb-4"></i>
+                        <h3 class="font-semibold">Node.js</h3>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 reveal" style="transition-delay: 600ms;">
+                        <i class="fab fa-git-alt text-5xl text-red-500 mb-4"></i>
+                        <h3 class="font-semibold">Git</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 reveal">My Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Project Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card reveal">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Project+One" alt="Project 1" class="w-full h-60 object-cover transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 project-overlay transition-opacity duration-500">
+                                <a href="#" class="brand-gradient text-white py-2 px-4 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-600 mb-4">A full-featured e-commerce website built with the MERN stack.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">React</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Node.js</span>
+                                <span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card reveal" style="transition-delay: 200ms;">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/60a5fa/ffffff?text=Project+Two" alt="Project 2" class="w-full h-60 object-cover transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 project-overlay transition-opacity duration-500">
+                                <a href="#" class="brand-gradient text-white py-2 px-4 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                            <p class="text-gray-600 mb-4">A collaborative task manager with real-time updates using Firebase.</p>
+                             <div class="flex flex-wrap gap-2">
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+                                <span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Firebase</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card reveal" style="transition-delay: 400ms;">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/f472b6/ffffff?text=Project+Three" alt="Project 3" class="w-full h-60 object-cover transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 project-overlay transition-opacity duration-500">
+                                <a href="#" class="brand-gradient text-white py-2 px-4 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+                            <p class="text-gray-600 mb-4">A personal portfolio website (like this one!) with smooth animations.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">HTML5</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">CSS3</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 reveal">Let's Connect</h2>
+                <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12 reveal">
+                    I'm currently available for freelance work and open to discussing new projects. Feel free to send me a message.
+                </p>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg reveal">
+                    <form action="#" method="POST">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="w-full brand-gradient text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://github.com/pgxprogramming/" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pratham-gupta1/" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/prathamgupta050/" class="text-2xl hover:text-blue-400 transition-colors" style="margin-top: 3px;"> <i class="cib-leetcode"></i></a>
+            </div>
+            <p>&copy; 2025 Pratham Gupta. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Typed.js for the typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
